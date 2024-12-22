@@ -38,6 +38,9 @@ export default function App() {
       /* Arreglo para agregar los resultados */
       const dataToIndicators: Indicator[] = new Array<Indicator>();
       const dataToItems: Item[] = new Array<Item>();
+      const dataTime = xml.querySelectorAll("time");
+
+      //extraer atributos time
 
       /* Análisis, extracción y almacenamiento del contenido del XML en el arreglo de resultados */
       const name = xml.getElementsByTagName("name")[0].innerHTML || "";
